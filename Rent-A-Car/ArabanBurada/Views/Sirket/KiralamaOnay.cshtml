@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "KiralamaOnay";
+    Layout = "~/Views/Shared/_SirketLayout.cshtml";
+}
+
+<h2>KiralamaOnay</h2>
+
+@foreach (var item in Model)
+{
+    <div class="kullanici-onay row">
+        <div class="araba-bilgileri col-xs-6">
+            <h4>@item.Araba.arabaMarka @item.Araba.arabaModel</h4>
+            <p>@item.kiralamaAlisYeri - @item.kiralamaAlisTarihi - @item.kiralamaAlisSaati</p>
+            <p>@item.kiralamaTeslimYeri - @item.kiralamaTeslimTarihi - @item.kiralamaTeslimSaati</p>
+            <p>Kiralanmak İstenen Gün Sayısı : @item.kiralamaGun</p>
+            <p>Alınan Günlük Ücret Ücret : @item.Araba.arabaUcret</p>
+            <div class="btn-kullanici-onaylama">
+                <button class="btn btn-warning">Araba Detay</button>
+            </div>
+        </div>
+
+        <div class="kullanici-bilgileri col-xs-6">
+            <h4>@item.Kullanici.kullaniciAd</h4>
+            <h6>12.06.2021</h6>
+            <p>Kullanıcı Mail : @item.Kullanici.kullaniciMail</p>
+            <p>Kullanıcı TC : @item.Kullanici.kullaniciTC</p>
+            <p>Kullanıcı Telefon : @item.Kullanici.kullaniciTel</p>
+            <p>Kullanıcı Doğum Tarihi : @item.Kullanici.kullaniciDogumTarihi</p>
+            <div class="btn-kullanici-onaylama">
+                <a href="/Sirket/kiralamaKabul/@item.kiralamaID" class="btn btn-success">Onayla</a>
+                <a href="/Sirket/kiralamaRed/@item.kiralamaID" class="btn btn-danger">Sil</a>
+            </div>
+        </div>
+    </div>
+
+}
+

@@ -1,0 +1,148 @@
+﻿@model EntityLayer.Concrete.Araba
+@{
+    ViewBag.Title = "arabaKirala";
+    Layout = "~/Views/Shared/_SirketLayout.cshtml";
+}
+
+<h2>ArabaKirala</h2>
+
+<form class="form-group" method="post">
+    <div class="row kiralama">
+
+        <div class="arabalar-img col-sm-2">
+            <img src="~/Img/alfaromeo.png" class="rounded" alt="Cinque Terre">
+        </div>
+
+        <div class="kiralamaArabaBilgileri col-xs-4">
+            <div class="arabalar row">
+
+                <div class="arabalar-bilgi col-sm-12">
+                    <div class="row">
+                        <div class="araba-markamodel col-md-8">
+                            @Model.arabaMarka @Model.arabaModel
+                        </div>
+                    </div>
+
+                    <div class="araba-ozellikler row">
+                        <div class="araba-ozellik col-xs-4">
+                            <img src="~/Img/manual-transmission.png" title="Vites Tipi" />
+                            <p>@Model.arabaVitesTuru </p>
+                        </div>
+
+                        <div class="araba-ozellik col-xs-4">
+                            <img src="~/Img/airbag.png" title="Airbag" />
+                            <p>@Model.arabaAirbag </p>
+                        </div>
+
+                        <div class="araba-ozellik col-xs-4">
+                            <img src="~/Img/circular-line-with-word-age-in-the-center.png" title="Minimum Yaş Sınırı" />
+                            <p>@Model.arabaYasSiniri</p>
+                        </div>
+
+                        <div class="araba-ozellik col-xs-4">
+                            <img src="~/Img/gas-pump.png" title="Yakıt Tipi" />
+                            <p>@Model.arabaYakitTuru</p>
+                        </div>
+
+                        <div class="araba-ozellik col-xs-4">
+                            <img src="~/Img/suitcase.png" title="Bagaj Hacmi" />
+                            <p>@Model.arabaBagajHacmi<p>
+                        </div>
+
+                        <div class="araba-ozellik col-xs-4">
+                            <img src="~/Img/license.png" title="Gerekli Minimum Ehliyet Yaşı" />
+                            <p>@Model.arabaEhliyetYasi</p>
+                        </div>
+                    </div>
+
+                    <div class="KMbilgileri">
+                        Aracın güncel kilometresi <span>@Model.arabaKM</span> KM'dir.
+                        Aracın günlük sınır kilometresi <span>@Model.arabaSinirKM</span> KM'dir.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kiralamaBilgileri col-xs-6">
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/map.png" />
+                <div class="araba-ekle-input">
+                    <select class="form-control" name="kiralamaAlisYeri">
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Sakarya">Sakarya</option>
+                        <option value="İzmir">İzmir</option>
+                        <option value="Bursa">Bursa</option>
+                        <option value="Kocaeli">Kocaeli</option>
+                        <option value="Antalya">Antalya</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/takvim.png" title="Marka" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="kiralamaAlisTarihi" placeholder="Alış Tarihi">
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/saat.png" title="Marka" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="kiralamaAlisSaati" placeholder="Alış Saati">
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/map.png" />
+                <div class="araba-ekle-input">
+                    <select class="form-control" name="kiralamaTeslimYeri">
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Sakarya">Sakarya</option>
+                        <option value="İzmir">İzmir</option>
+                        <option value="Bursa">Bursa</option>
+                        <option value="Kocaeli">Kocaeli</option>
+                        <option value="Antalya">Antalya</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/takvim.png" title="Marka" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="kiralamaTeslimTarihi" placeholder="Teslim Tarihi">
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/saat.png" title="Marka" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="kiralamaTeslimSaati" placeholder="Teslim Saati">
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/Img/gun.png" title="Marka" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="kiralamaGun" placeholder="Kiralanacak Gün Sayısı">
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/IMG/ID.png" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="kullaniciID" placeholder="Kullanıcı ID">
+                </div>
+            </div>
+
+            <div class="araba-ozellik col-xs-4">
+                <img src="~/IMG/ID.png" />
+                <div class="araba-ekle-input">
+                    <input type="text" class="form-control" name="arabaID" placeholder="Araba ID">
+                </div>
+            </div>
+            <button class="btn btn-warning btnArabaEkle" style="float: right; margin-top: 6%; margin-right: 1%; width: 50%">Kirala</button>
+        </div>
+
+
+    </div>
+</form>

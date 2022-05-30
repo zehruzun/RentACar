@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "getArabaList";
+    Layout = "~/Views/Shared/_SirketLayout.cshtml";
+}
+
+<h2>Kayıtlı Arabalar</h2>
+
+@foreach (var item in Model)
+{
+
+    <div class="arabalar row">
+
+        <div class="arabalar-edit">
+            <a href="#">
+                <i class="fas fa-map-marked"></i>
+            </a>
+        </div>
+
+
+        <div class="arabalar-img col-sm-3">
+            <img src="~/Img/alfaromeo.png" class="rounded" alt="Cinque Terre">
+        </div>
+
+        <div class="arabalar-bilgi col-sm-7">
+            <div class="row">
+                <div class="araba-markamodel col-md-8">
+                    @item.arabaMarka @item.arabaModel
+                </div>
+            </div>
+
+            <div class="araba-ozellikler row">
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/manual-transmission.png" title="Vites Tipi" />
+                    <p>@item.arabaVitesTuru</p>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/airbag.png" title="Airbag" />
+                    <p>@item.arabaAirbag</p>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/circular-line-with-word-age-in-the-center.png" title="Minimum Yaş Sınırı" />
+                    <p>@item.arabaYasSiniri</p>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/gas-pump.png" title="Yakıt Tipi" />
+                    <p>@item.arabaYakitTuru</p>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/suitcase.png" title="Bagaj Hacmi" />
+                    <p>@item.arabaBagajHacmi</p>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/license.png" title="Gerekli Minimum Ehliyet Yaşı" />
+                    <p>@item.arabaEhliyetYasi</p>
+                </div>
+            </div>
+
+            <div class="KMbilgileri">
+                Aracın güncel kilometresi <span>@item.arabaKM</span> KM'dir.
+                Aracın günlük sınır kilometresi <span>@item.arabaSinirKM</span> KM'dir.
+            </div>
+        </div>
+
+        <div class="arabalar-fiyat col-sm-2">
+            <h1>@item.arabaUcret TL</h1>
+            <a href="/Sirket/editAraba/@item.arabaID" class="btn btn-light">Düzenle</a>
+            <a href="/Sirket/arabaSil/@item.arabaID" class="btn btn-danger">Sil</a>
+        </div>
+    </div>
+    <br />
+
+}
+
+<a href="/Sirket/arabaEkle">Araba Ekle</a>
+

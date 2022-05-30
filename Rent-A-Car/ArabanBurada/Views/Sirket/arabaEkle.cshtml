@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "arabaEkle";
+    Layout = "~/Views/Shared/_SirketLayout.cshtml";
+}
+
+<h2>arabaEkle</h2>
+
+<form class="form-group" method="post">
+    <div class="araba-ekle row">
+
+        <div class="arabalar-bilgi">
+            <div class="araba-ozellikler row">
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/camera.png" title="Fotoğraf" />
+                    <div class="araba-ekle-input">
+                        <input type="file" class="form-control-file">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/araba.png" title="Marka" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaMarka" placeholder="Marka">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/araba.png" title="Model" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaModel" placeholder="Model">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/map.png" />
+                    <div class="araba-ekle-input">
+                        <select class="form-control" name="arabaSehir">
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="Sakarya">Sakarya</option>
+                            <option value="İzmir">İzmir</option>
+                            <option value="Bursa">Bursa</option>
+                            <option value="Kocaeli">Kocaeli</option>
+                            <option value="Antalya">Antalya</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/circular-line-with-word-age-in-the-center.png" title="Minimum Yaş Sınırı" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaYasSiniri" placeholder="Minimum Yaş Sınırı">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/license.png" title="Gerekli Minimum Ehliyet Yaşı" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaEhliyetYasi" placeholder="Minimum Ehliyet Yaşı">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/manual-transmission.png" title="Vites Tipi" />
+                    <div class="araba-ekle-input">
+                        <select class="form-control" name="arabaVitesTuru">
+                            <option value="Otomatik">Otomatik</option>
+                            <option value="Manuel">Manuel</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/airbag.png" title="Airbag" />
+                    <div class="araba-ekle-input">
+                        <select class="form-control" name="arabaAirbag">
+                            <option value="True">Var</option>
+                            <option value="False">Yok</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/gas-pump.png" title="Yakıt Tipi" />
+                    <div class="araba-ekle-input">
+                        <select class="form-control" name="arabaYakitTuru">
+                            <option value="Motorin">Motorin</option>
+                            <option value="Benzin">Benzin</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/suitcase.png" title="Bagaj Hacmi" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaBagajHacmi" placeholder="Bagaj Hacmi">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/KM-1.png" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaKM" placeholder="Güncel KM">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/KM-2.png" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaSinirKM" placeholder="Günlük Sınır KM">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/TL.png" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="arabaUcret" placeholder="Günlük Ücret">
+                    </div>
+                </div>
+
+                <div class="araba-ozellik col-xs-4">
+                    <img src="~/Img/TL.png" />
+                    <div class="araba-ekle-input">
+                        <input type="text" class="form-control" name="sirketID" placeholder="Şirket Ücret">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btnArabaEkle">Araba Ekle</button>
+</form>

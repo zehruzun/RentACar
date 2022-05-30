@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "KullaniciOnay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>KullaniciOnay</h2>
+@foreach (var item in Model)
+{
+    <div class="kullanici-onay">
+        <h4>Kullanıcı Adı Soyadı</h4>
+        <h6>12.06.2021</h6>
+        <p>Kullanıcı Mail : zehra-zehrauzun.com</p>
+        <p>Kullanıcı TC : 145898785</p>
+        <p>Kullanıcı Telefon : 05436225536</p>
+        <div class="btn-kullanici-onaylama">
+            <a href="/Admin/kullaniciKabul/@item.kullaniciID" class="btn btn-success">Onayla</a>
+            <a href="/Admin/kullaniciRed/@item.kullaniciID" class="btn btn-danger">Sil</a>
+        </div>
+    </div>
+}
