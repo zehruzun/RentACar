@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ASP.NET Uygulamam</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/CSS/RentACar.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3ca193a5d7.js" crossorigin="anonymous"></script>
+    <link href="~/CSS/RentACar.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="nav-style">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Rent A Car", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Sirket/Anasayfa"><span class="glyphicon glyphicon-home"></span> Anasayfa</a></li>
+                    <li><a href="/Sirket/arabaEkle"><span class="glyphicon glyphicon-file"></span> Araba Ekle</a></li>
+                    <li><a href="/Sirket/getArabaList"><span class="glyphicon glyphicon-euro"></span> Araba Listele</a></li>
+                    <li><a href="/Sirket/KiralamaOnay"><span class="glyphicon glyphicon-plus"></span> Kiralama Onay</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="@Url.Action("Mesajlar", "About")"><span class="glyphicon glyphicon-envelope"></span> Mesajlar</a></li>
+                    <li><a href="@Url.Action("Bildirimler", "About")"><span class="glyphicon glyphicon-bell"></span> Bildirimler</a></li>
+                    <li><a href="@Url.Action("Örnek Şirket", "About")"><span class="glyphicon glyphicon-user"></span> Örnek Şirket</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cerceve">
+        @RenderBody()
+    </div>
+</body>
+</html>

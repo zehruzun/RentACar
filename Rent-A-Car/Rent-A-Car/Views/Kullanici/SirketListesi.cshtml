@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "SirketListesi";
+    Layout = "~/Views/Shared/_KullaniciLayout.cshtml";
+}
+
+<h2>SirketListesi</h2>
+
+@foreach (var item in Model)
+{
+    <div class="kullanici-onay">
+        <h4>@item.sirketAd</h4>
+        <h6>05/01/2022</h6>
+        <p>Şirket Mail : @item.sirketMail</p>
+        <p>Şirket Şehir : @item.sirketSehir</p>
+        <div class="btn-kullanici-onaylama">
+            <a href="/Kullanici/sirketArabaList/@item.sirketID" class="btn btn-warning">Arabaları Görüntüle</a>
+        </div>
+    </div>
+}

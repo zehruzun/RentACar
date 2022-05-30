@@ -12,6 +12,7 @@ namespace BusinessLayr.Abstract
         List<Kullanici> GetList();
         Kullanici GetById(int id);
         void kullaniciEkle(Kullanici kullanici);
+
         void kullaniciSil(Kullanici kullanici);
         void kullanıcıKabul(Kullanici kullanici);
         void kullaniciDuzenle(Kullanici kullanici);

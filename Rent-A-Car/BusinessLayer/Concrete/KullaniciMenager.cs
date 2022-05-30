@@ -13,7 +13,6 @@ namespace BusinessLayr.Concrete
     public class KullaniciMenager : IKullaniciService
     {
         IKullaniciDAL _kullaniciDAL;
-        int kullaniciId;
         public KullaniciMenager(IKullaniciDAL kullaniciDAL)
         {
             _kullaniciDAL = kullaniciDAL;

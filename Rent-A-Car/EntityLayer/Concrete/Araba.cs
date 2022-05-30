@@ -14,28 +14,24 @@ namespace EntityLayer.Concrete
         [StringLength(500)]
         public string arabaImg { get; set; }
         [StringLength(500)]
-        public string arabaTur { get; set;}
-        [StringLength(500)]
         public string arabaMarka { get; set; }
         [StringLength(500)]
         public string arabaModel { get; set; }
-        public bool ArbaYakitTuru { get; set; }
+        [StringLength(500)]
+        public string arabaVitesTuru { get; set; }
+        [StringLength(500)]
+        public string arabaYakitTuru { get; set; }
         public int arabaUcret { get; set; }
+        public int arabaEhliyetYasi { get; set; }
+        public int arabaYasSiniri { get; set; }
+        public int arabaSinirKM { get; set; }
         public int arabaKM { get; set; }
-        public int arabaYil { get; set; }
-        [StringLength(500)]
-        public string arabaMotor { get; set; }
-        [StringLength(500)]
-        public string arabaSanziman { get; set; }
+        public bool arabaAirbag { get; set; }
+        public int arabaBagajHacmi { get; set; }
         public bool arabaDurum { get; set; }
-
-        public bool? ArabaSisFari { get; set; }
-        public bool? ArabaKatlanirAyna { get; set; }
-        public bool? ArabaParkSensoru { get; set; }
-        public bool? ArabaMerkeziKilit { get; set; }
-        public bool? ArabaCamTavan { get; set; }
-
         public int sirketID { get; set; }
-        public virtual Satici Satici { get; set; }
+        public virtual Sirket Sirket { get; set; }
+
+        public ICollection<Kiralama> Kiralamas { get; set; }
     }
 }

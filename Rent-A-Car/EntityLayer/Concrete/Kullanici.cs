@@ -17,5 +17,12 @@ namespace EntityLayer.Concrete
         public string kullaniciSoyad { get; set; }
         [StringLength(500)]
         public string kullaniciMail { get; set; }
+        [StringLength(500)]
+        public string kullaniciSifre { get; set; }
+        public int kullaniciTel { get; set; }
+        public int kullaniciTC { get; set; }
+        public DateTime kullaniciDogumTarihi { get; set; }
+        public bool kullaniciDurum { get; set; }
+        public ICollection<Kiralama> Kiralamas { get; set; }
     }
 }

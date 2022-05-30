@@ -14,7 +14,6 @@ namespace BusinessLayr.Abstract
         void kiralamaEkle(Kiralama kiralama);
 
         void kiralamaSil(Kiralama kiralama);
-        void kiralamaKabul(Kiralama kiralama);
 
         void kiralamaDuzenle(Kiralama kiralama);
     }

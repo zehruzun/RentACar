@@ -31,22 +31,15 @@ namespace BusinessLayer.Concrete
 
         public void kiralamaSil(Kiralama kiralama)
         {
-            kiralama.kiralamaDurum = false;
-            _kiralamaDAL.UpDate(kiralama);
+            _kiralamaDAL.Delete(kiralama);
         }
 
-        public void kiralamaKabul(Kiralama kiralama)
-        {
-            kiralama.kiralamaDurum = true;
-            _kiralamaDAL.UpDate(kiralama);
-        }
-
-        public Kiralama GetById(int id)
+        Kiralama IKiralamaService.GetById(int id)
         {
             return _kiralamaDAL.Get(x => x.kiralamaID == id);
         }
 
-        public List<Kiralama> GetList()
+        List<Kiralama> IKiralamaService.GetList()
         {
             return _kiralamaDAL.List();
         }

@@ -1,0 +1,870 @@
+﻿.cerceve {
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
+}
+
+.arabalar {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px
+}
+
+.araba-ekle {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px
+}
+
+    .araba-ekle .arabalar-bilgi {
+        height: 100%;
+        float: left;
+        padding: 0% 2%;
+        padding-bottom: 2%;
+    }
+
+    .araba-ekle .araba-ozellik {
+        margin: -0.3%;
+    }
+
+.btnArabaEkle {
+    float: right;
+    width: 30%;
+    height: 40px;
+    margin-top: -4.2%;
+    margin-right: 4.6%;
+}
+
+.arabalar-edit {
+    color: black;
+    position: absolute;
+    right: 8%;
+    margin-top: 1%;
+    z-index: 2;
+}
+
+    .arabalar-edit a {
+        color: black;
+    }
+
+.arabalar-img {
+    height: 100%;
+    border-radius: 20px;
+    float: left;
+}
+
+    .arabalar-img img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        padding: 1% 2%;
+    }
+
+.arabalar-bilgi {
+    height: 100%;
+    float: left;
+    padding: 1% 0px;
+}
+
+.araba-ozellik p {
+    font-size: 14px;
+}
+
+.araba-ozellik img {
+    height: 6vh;
+    width: 25%;
+    object-fit: contain;
+    float: left;
+    margin-top: 8%;
+}
+
+.araba-ekle-input {
+    width: 72%;
+    float: left;
+    margin-top: 9.7%;
+}
+
+.form-control {
+    float: left;
+    margin-right: 5%;
+}
+
+.araba-ozellik p {
+    margin: 6%;
+    margin-left: 40%;
+    margin-top: 14%;
+}
+
+.KMbilgileri {
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-left: 3.6%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.arabalar-fiyat {
+    height: 100%;
+    border-radius: 20px;
+    float: right;
+}
+
+    .arabalar-fiyat h1 {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 35%;
+        padding: 5%;
+        border-radius: 20px;
+    }
+
+    .arabalar-fiyat button {
+        width: 100%;
+        padding: 5%;
+        border-radius: 20px;
+        margin-top: 10%;
+    }
+
+.araba-markamodel {
+    height: 28%;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2.3px;
+    margin-left: 4.2%;
+    background-color: black;
+}
+
+.araba-sehir button {
+    float: right;
+    margin-top: 5%;
+    margin-right: 40%;
+    border-radius: 20px;
+    border: none;
+}
+
+    .araba-sehir button :hover {
+        border: none;
+    }
+
+.KMbilgileri span {
+    font-weight: bolder;
+}
+
+.arabaEkle {
+    width: 60%;
+    margin: 0%;
+    background-color: blue;
+}
+
+.mesaj-listesi {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+
+.mesaj-bilgileri {
+    margin: 2%;
+}
+
+.mesaj-icerik {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.mesaj-tarih {
+    position: absolute;
+    right: 7.8%;
+    margin-top: 0.6%;
+}
+
+.mesaj-sil {
+    width: 15%;
+    margin-bottom: 2%;
+    float: right;
+    margin-right: 2%;
+}
+
+    .mesaj-sil button {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+.mesaj-input {
+    float: left;
+    width: 80%;
+    background-color: violet;
+    margin-top: 1%;
+}
+
+    .mesaj-input input {
+        width: 10000px;
+    }
+
+@media only screen and (max-width: 1000px) {
+    .araba-sehir {
+        display: none;
+    }
+
+    .arabalar-fiyat h1 {
+        font-size: 25px;
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .arabalar {
+        width: 100%;
+        margin: auto;
+    }
+
+    .araba-sehir {
+        display: none;
+    }
+
+    .araba-ozellik p {
+        font-size: 14px;
+    }
+
+    .araba-ozellik img {
+        height: 5vh;
+        width: 40%;
+        object-fit: contain;
+        float: left;
+        margin-top: 8%;
+    }
+
+    .araba-ozellik p {
+        margin: 6%;
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+
+    .arabalar-fiyat {
+        height: 100%;
+        border-radius: 20px;
+        float: right;
+    }
+
+        .arabalar-fiyat h1 {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            margin-top: 25%;
+            padding: 5%;
+            border-radius: 20px;
+        }
+
+        .arabalar-fiyat button {
+            width: 100%;
+            padding: 5%;
+            border-radius: 20px;
+            margin-top: 20%;
+        }
+
+    .arabalar-img {
+        width: 55%;
+        float: none;
+        margin: auto;
+    }
+
+    .araba-markamodel {
+        text-align: center;
+    }
+
+    .araba-markamodel {
+        margin: auto;
+        margin-left: 0%;
+    }
+
+    .arabalar-fiyat {
+        width: 75%;
+        float: right;
+        margin-right: 13%;
+    }
+
+        .arabalar-fiyat h1 {
+            width: 49%;
+            float: left;
+            margin-top: 5%;
+            font-size: 32px;
+        }
+
+        .arabalar-fiyat button {
+            width: 49%;
+            float: right;
+            margin-top: 8%;
+            margin-bottom: 5%;
+        }
+
+    .arabalar-bilgi {
+        height: 100%;
+        float: none;
+        padding: 1% 0px;
+        margin: auto;
+    }
+
+    .KMbilgileri {
+        text-align: center;
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-top: 4%;
+    }
+
+    .araba-ozellikler {
+        margin-left: 4%;
+    }
+}
+
+
+.login-css {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+}
+
+.login {
+    padding: 1% 0px;
+}
+
+.login-admin {
+    margin-top: 4%;
+}
+
+.login-giris {
+    margin-top: 1%;
+}
+
+    .login-giris h3 {
+        text-align: center;
+    }
+
+    .login-giris h5 {
+        text-align: center;
+    }
+
+.login-admin h3 {
+    text-align: center;
+}
+
+.login-admin h5 {
+    text-align: center;
+}
+
+.login-kullanici {
+    margin-top: 8%;
+}
+
+    .login-kullanici h3 {
+        text-align: center;
+    }
+
+    .login-kullanici h5 {
+        text-align: center;
+    }
+
+.login-input {
+    float: left;
+    width: 100%;
+}
+
+.kayit {
+    float: left;
+    margin-top: 1%;
+    width: 62%;
+}
+
+hr {
+    border: 1px solid;
+    background-color: black;
+}
+
+.kullanici-onay {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.araba-bilgileri {
+    padding-right: 5%;
+}
+
+.kullanici-bilgileri {
+    padding-left: 3%;
+}
+
+.kullanici-onay h6 {
+    margin-top: -3%;
+    margin-right: 0.2%;
+    float: right;
+}
+
+.btn-kullanici-onaylama {
+    float: right;
+}
+
+.btn-kirala {
+    float: right;
+    margin-right: 4.1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 18%;
+}
+
+    .btn-kirala button {
+        width: 100%;
+    }
+
+.login-css {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+}
+
+.login {
+    padding: 1% 0px;
+}
+
+.login-admin {
+    margin-top: 4%;
+}
+
+.login-giris {
+    margin-top: 1%;
+}
+
+    .login-giris h3 {
+        text-align: center;
+    }
+
+    .login-giris h5 {
+        text-align: center;
+    }
+
+.login-admin h3 {
+    text-align: center;
+}
+
+.login-admin h5 {
+    text-align: center;
+}
+
+.login-kullanici {
+    margin-top: 8%;
+}
+
+    .login-kullanici h3 {
+        text-align: center;
+    }
+
+    .login-kullanici h5 {
+        text-align: center;
+    }
+
+.login-input {
+    float: left;
+    width: 100%;
+}
+
+.kayit {
+    float: left;
+    margin-top: 1%;
+    width: 62%;
+}
+
+hr {
+    border: 1px solid;
+    background-color: black;
+}
+
+.kullanici-onay {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+    .kullanici-onay h6 {
+        margin-top: -3%;
+        margin-right: 0.2%;
+        float: right;
+    }
+
+.btn-kullanici-onaylama {
+    float: right;
+}
+
+
+.cerceve {
+    display: flex;
+    flex-direction: column;
+}
+
+.arabalar {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px
+}
+
+.araba-ekle {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px
+}
+
+    .araba-ekle .arabalar-bilgi {
+        height: 100%;
+        float: left;
+        padding: 0% 2%;
+        padding-bottom: 2%;
+    }
+
+    .araba-ekle .araba-ozellik {
+        margin: -0.3%;
+    }
+
+.btnArabaEkle {
+    float: right;
+    width: 30%;
+    height: 40px;
+    margin-top: -4.2%;
+    margin-right: 4.6%;
+}
+
+.arabalar-edit {
+    color: black;
+    position: absolute;
+    right: 8%;
+    margin-top: 1%;
+    z-index: 2;
+}
+
+    .arabalar-edit a {
+        color: black;
+    }
+
+.arabalar-img {
+    height: 100%;
+    border-radius: 20px;
+    float: left;
+}
+
+    .arabalar-img img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        padding: 1% 2%;
+    }
+
+.arabalar-bilgi {
+    height: 100%;
+    float: left;
+    padding: 1% 0px;
+}
+
+.araba-ozellik p {
+    font-size: 14px;
+}
+
+.araba-ozellik img {
+    height: 6vh;
+    width: 25%;
+    object-fit: contain;
+    float: left;
+    margin-top: 8%;
+}
+
+.araba-ekle-input {
+    width: 72%;
+    float: left;
+    margin-top: 9.7%;
+}
+
+.form-control {
+    float: left;
+    margin-right: 5%;
+}
+
+.araba-ozellik p {
+    margin: 6%;
+    margin-left: 40%;
+    margin-top: 14%;
+}
+
+.KMbilgileri {
+    margin-top: 2.5%;
+    margin-bottom: 1%;
+    margin-left: 3.6%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.arabalar-fiyat {
+    height: 100%;
+    border-radius: 20px;
+    float: right;
+}
+
+    .arabalar-fiyat h1 {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 35%;
+        padding: 5%;
+        border-radius: 20px;
+    }
+
+    .arabalar-fiyat button {
+        width: 100%;
+        padding: 5%;
+        border-radius: 20px;
+        margin-top: 10%;
+    }
+
+.araba-markamodel {
+    height: 28%;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2.3px;
+    margin-left: 4.2%;
+}
+
+.araba-sehir button {
+    float: right;
+    margin-top: 5%;
+    margin-right: 40%;
+    border-radius: 20px;
+    border: none;
+}
+
+    .araba-sehir button :hover {
+        border: none;
+    }
+
+.KMbilgileri span {
+    font-weight: bolder;
+}
+
+.arabaEkle {
+    width: 60%;
+    margin: 0%;
+    background-color: blue;
+}
+
+.mesaj-listesi {
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+
+.mesaj-bilgileri {
+    margin: 2%;
+}
+
+.mesaj-icerik {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.mesaj-tarih {
+    position: absolute;
+    right: 7.8%;
+    margin-top: 0.6%;
+}
+
+.mesaj-sil {
+    width: 15%;
+    margin-bottom: 2%;
+    float: left;
+    margin-left: 32.8%;
+}
+
+    .mesaj-sil button {
+        width: 100%;
+        border-radius: 15px;
+        float: left;
+        margin-left: 2%;
+    }
+
+.mesaj-input {
+    float: left;
+    width: 100%;
+    margin-top: 1%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .araba-sehir {
+        display: none;
+    }
+
+    .arabalar-fiyat h1 {
+        font-size: 25px;
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .arabalar {
+        width: 100%;
+        margin: auto;
+    }
+
+    .araba-sehir {
+        display: none;
+    }
+
+    .araba-ozellik p {
+        font-size: 14px;
+    }
+
+    .araba-ozellik img {
+        height: 5vh;
+        width: 40%;
+        object-fit: contain;
+        float: left;
+        margin-top: 8%;
+    }
+
+    .araba-ozellik p {
+        margin: 6%;
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+
+    .arabalar-fiyat {
+        height: 100%;
+        border-radius: 20px;
+        float: right;
+    }
+
+        .arabalar-fiyat h1 {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            margin-top: 25%;
+            padding: 5%;
+            border-radius: 20px;
+        }
+
+        .arabalar-fiyat button {
+            width: 100%;
+            padding: 5%;
+            border-radius: 20px;
+            margin-top: 20%;
+        }
+
+    .arabalar-img {
+        width: 55%;
+        float: none;
+        margin: auto;
+    }
+
+    .araba-markamodel {
+        text-align: center;
+    }
+
+    .araba-markamodel {
+        margin: auto;
+        margin-left: 0%;
+    }
+
+    .arabalar-fiyat {
+        width: 75%;
+        float: right;
+        margin-right: 13%;
+    }
+
+        .arabalar-fiyat h1 {
+            width: 49%;
+            float: left;
+            margin-top: 5%;
+            font-size: 32px;
+        }
+
+        .arabalar-fiyat button {
+            width: 49%;
+            float: right;
+            margin-top: 8%;
+            margin-bottom: 5%;
+        }
+
+    .arabalar-bilgi {
+        height: 100%;
+        float: none;
+        padding: 1% 0px;
+        margin: auto;
+    }
+
+    .KMbilgileri {
+        text-align: center;
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-top: 4%;
+    }
+
+    .araba-ozellikler {
+        margin-left: 4%;
+    }
+}
+
+
+body {
+    background-color: rgba(246, 246, 246, 0.8)
+}
+
+.navbar {
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 10%;
+    background-color: rgba(27, 243, 214, 0.8);
+}
+
+a {
+    color: white;
+}
+
+.nav-style {
+    width: 90%;
+    margin: auto;
+    margin-top: 0.6%
+}
+
+.navbar-collapse {
+    margin-left: 25%;
+}
+
+.collapse ul li :hover {
+    background: none;
+    color: black;
+    border: none;
+}
+
+.cerceve {
+    width: 88.1%;
+    margin: auto;
+    margin-top: 4%;
+}
+

@@ -10,10 +10,10 @@ namespace DataAccessLayer.Concrete
 {
     public class Context : DbContext
     {
-        public DbSet<Admin> Admins { get; set; }
         public DbSet<Araba> Arabas { get; set; }
+        public DbSet<Kiralama> Kiralamas { get; set; }
         public DbSet<Kullanici> Kullanicis { get; set; }
-        public DbSet<Satici> Satici { get; set; }
-        public DbSet<Yorum> Yorums { get; set; }
+        public DbSet<Sirket> Sirkets { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }
